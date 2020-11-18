@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color"
+    tools:context=".view.SongDetailsActivity">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/play_btn"
+        >
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        app:elevation="0dp"
+        android:background="@color/app_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/collapsing_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background_color"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+
+    <LinearLayout
+        app:layout_collapseMode="pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:paddingBottom="8dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:paddingTop="32dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:background="@drawable/song_details"
+             >
+
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_back"/>
+
+
+            <ImageView
+                android:id="@+id/fav_btn"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_toLeftOf="@+id/download_img"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_fav_circle_shape"/>
+
+
+            <ImageView
+                android:id="@+id/download_img"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_download"/>
+
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="16sp"
+            android:gravity="center"
+            android:fontFamily="@font/helvetica_neu_bold"
+            android:text="Night Island"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="22dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:text="45 MIN . SLEEP MUSIC"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/song_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="22dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/helvetica_neue_light"
+            android:text="Ease the mind into a restful night’s sleep with these deep, amblent tones."
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="22dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_fav" />
+
+                <TextView
+                    android:id="@+id/fav_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/helvetica_neue_medium"
+                    android:text="24.234 Favorits"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_lestening" />
+
+                <TextView
+                    android:id="@+id/lestening_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/helvetica_neue_medium"
+                    android:text="34.234 Lestening"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginBottom="16sp"
+                android:text="Related"
+                android:fontFamily="@font/helvetica_neue_medium"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id = "@+id/song_list_recycler_view"
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="22dp"
+                android:nestedScrollingEnabled="true"
+                android:scrollbars = "vertical" />
+
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+    <Button
+        android:id="@+id/play_btn"
+
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="22dp"
+        android:fontFamily="@font/helvetica_neue_medium"
+        android:background="@drawable/btn_rounded"
+        android:paddingTop="16dp"
+        android:clickable="true"
+        android:paddingBottom="16dp"
+        android:text="@string/play"
+        android:textColor="@color/white" />
+</RelativeLayout>

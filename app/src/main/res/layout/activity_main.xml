@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color"
+    tools:context=".view.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_alignParentTop="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/nav_background_color"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/nav_background_color"
+            android:foreground="?attr/selectableItemBackground"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:theme="@style/Widget.BottomNavigationView"
+            app:elevation="0dp"
+            app:itemBackground="@color/nav_background_color"
+            app:itemIconTint="@color/sec_text_color"
+            app:itemTextColor="@color/sec_text_color"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/navigation">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="6dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/ic_line" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
