@@ -35,7 +35,7 @@
                     android:gravity="center"
                     android:text="@string/welcome_to_sleep"
                     android:fontFamily="@font/helvetica_neu_bold"
-                    android:textColor="@color/white"
+                    android:textColor="#E6E7F2"
                     android:textSize="30sp"
                     android:textStyle="bold" />
 
@@ -49,7 +49,7 @@
                     android:layout_marginBottom="36dp"
                     android:gravity="center"
                     android:text="Explore the new king of sleep. It uses sound \nand vesualization to create perfect conditions \nfor refreshing sleep."
-                    android:textColor="@color/white"
+                    android:textColor="#EBEAEC"
                     android:textSize="16sp" />
 
 
@@ -86,7 +86,7 @@
                 android:fontFamily="@font/helvetica_neue_medium"
                 android:paddingBottom="16dp"
                 android:text="@string/get_started"
-                android:textColor="@color/white" />
+                android:textColor="#F6F1FB" />
             </LinearLayout>
         </RelativeLayout>
 

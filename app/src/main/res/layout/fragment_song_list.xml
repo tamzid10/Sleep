@@ -33,7 +33,7 @@
             android:text="Sleep Music"
             android:fontFamily="@font/helvetica_neu_bold"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="#E6E7F2"
             android:textSize="22sp"
             android:textStyle="bold" />
 

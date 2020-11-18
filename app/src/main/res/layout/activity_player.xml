@@ -74,7 +74,7 @@
                 android:gravity="center"
                 android:text="Night Island"
                 android:fontFamily="@font/helvetica_neu_bold"
-                android:textColor="@color/white"
+                android:textColor="#E6E7F2"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
@@ -86,7 +86,7 @@
                 android:layout_marginBottom="8dp"
                 android:text="SLEEP MUSIC"
                 android:fontFamily="@font/helvetica_neue_medium"
-                android:textColor="@color/white"
+                android:textColor="#98A1BD"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -107,6 +107,7 @@
                     android:orientation="horizontal">
 
                     <ImageView
+                        android:id="@+id/prev_btn"
                         android:background="@drawable/ripple"
                         android:layout_width="42dp"
                         android:layout_height="42dp"
@@ -125,6 +126,7 @@
                     android:orientation="horizontal">
 
                     <ImageView
+                        android:id="@+id/play_pause_btn"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:clickable="true"
@@ -143,6 +145,7 @@
                     android:orientation="horizontal">
 
                     <ImageView
+                        android:id="@+id/forward_btn"
                         android:background="@drawable/ripple"
                         android:layout_width="42dp"
                         android:layout_height="42dp"
@@ -189,7 +192,7 @@
                         android:layout_marginBottom="6dp"
                         android:text="00:00"
                         android:fontFamily="@font/helvetica_neue_light"
-                        android:textColor="@color/white"
+                        android:textColor="#E6E7F2"
                         android:textSize="16sp" />
 
                     <TextView
@@ -201,7 +204,7 @@
                         android:layout_marginRight="12dp"
                         android:layout_marginBottom="6dp"
                         android:text="00:00"
-                        android:textColor="@color/white"
+                        android:textColor="#E6E7F2"
                         android:textSize="16sp" />
 
 

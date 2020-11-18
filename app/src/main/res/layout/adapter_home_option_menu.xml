@@ -16,7 +16,7 @@
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_gravity="center"
-        android:src="@drawable/ic_home_with_background"/>
+        android:src="@drawable/ic_option_all"/>
 
     <TextView
         android:id="@+id/title_tv"
@@ -28,7 +28,7 @@
         android:padding="8dp"
         android:layout_marginTop="4dp"
         android:layout_gravity="center"
-        android:textColor="@color/white"
+        android:textColor="#98A1BD"
         />
     
     

@@ -32,7 +32,7 @@
                 android:layout_marginTop="56dp"
                 android:gravity="center"
                 android:text="@string/sleep_stories"
-                android:textColor="@color/white"
+                android:textColor="#E6E7F2"
                 android:fontFamily="@font/helvetica_neu_bold"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -45,9 +45,9 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="36dp"
                 android:gravity="center"
-                android:fontFamily="sans-serif-condensed-light"
+                android:fontFamily="@font/helvetica_neue_light"
                 android:text="Soothing bedtime stories to help you fall\ninto a deep and natural sleep"
-                android:textColor="@color/white"
+                android:textColor="#EBEAEC"
                 android:textSize="16sp" />
 
 
@@ -90,7 +90,7 @@
                         android:gravity="center"
                         android:fontFamily="@font/garamond_premr_pro_smbd"
                         android:text="@string/the_ocean_moon"
-                        android:textColor="@color/white"
+                        android:textColor="#FFE7BF"
                         android:textSize="36sp"
                         android:textStyle="bold" />
 
@@ -103,7 +103,7 @@
                         android:gravity="center"
                         android:fontFamily="@font/helvetica_neue_light"
                         android:text="Non-stop 8- hour mixes of our \nmost popular sleep audio"
-                        android:textColor="@color/white"
+                        android:textColor="#F9F9FF"
                         android:textSize="16sp" />
 
 
@@ -126,7 +126,7 @@
                             android:fontFamily="@font/helvetica_neue_medium"
                             android:text="Start"
                             android:textAllCaps="true"
-                            android:textColor="@color/btn_text_color"
+                            android:textColor="#3F414E"
                             android:textSize="12sp" />
                     </LinearLayout>
                 </LinearLayout>

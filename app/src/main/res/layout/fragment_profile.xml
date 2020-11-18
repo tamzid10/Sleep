@@ -34,7 +34,7 @@
             android:fontFamily="@font/helvetica_neu_bold"
             android:text="Profile"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="#E6E7F2"
             android:textSize="22sp"
             android:textStyle="bold" />
 
@@ -48,9 +48,9 @@
         android:text="Coming Soon...!"
         android:layout_centerVertical="true"
         android:layout_gravity="center"
-        android:fontFamily="sans-serif-condensed-light"
+        android:fontFamily="@font/helvetica_neue_light"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/white"
+        android:textColor="#98A1BD"
         android:textSize="18sp" />
 
 

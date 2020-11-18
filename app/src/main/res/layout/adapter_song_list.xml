@@ -34,7 +34,7 @@
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/helvetica_neu_bold"
             android:text="Night Island"
-            android:textColor="@color/white"
+            android:textColor="#E6E7F2"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -47,7 +47,7 @@
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/helvetica_neue_medium"
             android:text="45 MIN . SLEEP MUSIC"
-            android:textColor="@color/white"
+            android:textColor="#98A1BD"
             android:textSize="14sp" />
 
 

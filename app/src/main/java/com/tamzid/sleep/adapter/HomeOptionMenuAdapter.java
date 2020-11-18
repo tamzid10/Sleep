@@ -62,7 +62,9 @@ public class HomeOptionMenuAdapter extends RecyclerView.Adapter<HomeOptionMenuAd
         // Set the text of each item of
         holder.title_tv.setText(list.get(position).getTitle());
         holder.option_image.setImageResource(list.get(position).getIcon_id());
-
+        if (position==0){
+            holder.title_tv.setTextColor(context.getResources().getColor(R.color.white));
+        }
         holder.root_layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
